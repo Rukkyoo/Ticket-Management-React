@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1F2937;
+}
+
+.heading-xl {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #1F2937;
+}
+
+.heading-lg {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #1F2937;
+}
+
+.heading-md {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1F2937;
+}
+
+.heading-sm {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1F2937;
+}
+
+.text-body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #6B7280;
+}
+
+.text-small {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6B7280;
+}
+
+.text-tiny {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.text-primary {
+  color: #1F2937;
+}
+
+.text-secondary {
+  color: #6B7280;
+}
+
+.text-muted {
+  color: #9CA3AF;
+}
+
+.bg-primary {
+  background-color: #2563EB;
+}
+
+.bg-light {
+  background-color: #F0F9FF;
+}
+
+.bg-light-gray {
+  background-color: #F9FAFB;
+}
+
+.bg-success {
+  background-color: #10B981;
+}
+
+.border-custom {
+  border-color: #E5E7EB;
+}
+
+.btn-primary {
+  background-color: #2563EB;
+  color: white;
+  padding: 0.625rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1E40AF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #1F2937;
+  padding: 0.625rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #F0F9FF;
+}
+
+.card-base {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-base:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translateY(-2px);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 50%, #BAE6FD 100%);
+}
+
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+
+.icon-bg {
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.nav-link {
+  color: #6B7280;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #1F2937;
+}
+
+.footer-link {
+  color: #6B7280;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #2563EB;
+}
+
+.badge-open {
+  background-color: #F0F9FF;
+  color: #6B7280;
+}
+
+.badge-success {
+  background-color: #10B981;
+  color: white;
+}
+
+.border-primary {
+  border: 2px solid #2563EB;
+}
+
+.btn-outline-primary {
+  border: 2px solid #2563EB;
+  color: #2563EB;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #F0F9FF;
+}
+
+/* SVG Utilities */
+@utility svg-clean {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@utility svg-icon {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Dashboard-specific theme additions */
+:root {
+  --color-dashboard-bg: #F9FAFB;
+  --color-sidebar-bg: #EFF6FF;
+  --color-sidebar-active: #2563EB;
+  --color-stat-card-bg: #FFFFFF;
+  --color-badge-open: #F59E0B;
+  --color-badge-resolved: #10B981;
+  --color-border-light: #E5E7EB;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: #6B7280;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.sidebar-nav-item:hover {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: #2563EB;
+}
+
+.sidebar-nav-item.active {
+  background-color: #2563EB;
+  color: white;
+}
+
+.stat-card {
+  background-color: var(--color-stat-card-bg);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.badge-status {
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.activity-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border-light);
+  align-items: center;
+}
+
+.activity-table-row:hover {
+  background-color: #F9FAFB;
+}
+
+/* Toast animation */
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .heading-xl {
+    font-size: 2.5rem;
+  }
+  
+  .heading-lg {
+    font-size: 2rem;
+  }
+  
+  .section-padding {
+    padding: 3rem 1.5rem;
+  }
+}
