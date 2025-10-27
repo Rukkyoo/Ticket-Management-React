@@ -5,7 +5,6 @@ export default function HeroSection() {
   const navigate = useNavigate();
   return (
     <section className="relative pt-10 pb-20 overflow-hidden max-w-[1440px]">
-      {/* SVG Background - positioned absolutely behind everything */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <svg
           className="absolute bottom-0 left-0 w-full h-auto"
@@ -27,8 +26,7 @@ export default function HeroSection() {
           />
         </svg>
       </div>
-
-      {/* Content container with higher z-index */}
+      
       <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col lg:w-[120%] items-center text-center lg:items-start lg:text-left">
